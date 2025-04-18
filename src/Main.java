@@ -1,19 +1,14 @@
+import collections.TestList;
+
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
 
-        //List with ArraysList
+         var testList = TestList.getList();
+         testList.forEach(System.out::println);
 
-        List<String> namesList = new ArrayList<>();
-        namesList.add("Adriano");
-        namesList.add("Juliano");
-        namesList.add("Ricardo");
-        int i = 1;
-        for (String name : namesList) {
 
-            System.out.println(i++ + "º" + "nome: " + name);
-        }
 
         // ArrayList - Ordered by insertion, allows duplicates
 
@@ -82,7 +77,7 @@ public class Main {
         namesHashSet.add("Adriano");
         namesHashSet.add("Beto"); // ignora elementos duplicados
         namesHashSet.add("Adriana");
-
+        int i = 1;
         for (String name : namesHashSet) {
             System.out.println(i++ + "º" + "nome: " + name);
         }
